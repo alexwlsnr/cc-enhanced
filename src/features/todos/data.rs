@@ -47,8 +47,18 @@ impl std::fmt::Display for TodoPriority {
 pub struct TodoItem {
     pub content: String,
     pub status: TodoStatus,
+    #[serde(default = "default_priority")]
     pub priority: TodoPriority,
+    #[serde(default = "default_id")]
     pub id: String,
+}
+
+fn default_priority() -> TodoPriority {
+    TodoPriority::Medium
+}
+
+fn default_id() -> string {
+    ""
 }
 
 /// Session todos with metadata
