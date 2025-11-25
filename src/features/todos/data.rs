@@ -57,7 +57,7 @@ fn default_priority() -> TodoPriority {
     TodoPriority::Medium
 }
 
-fn default_id() -> string {
+fn default_id() -> String {
     ""
 }
 
