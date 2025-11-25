@@ -58,7 +58,7 @@ fn default_priority() -> TodoPriority {
 }
 
 fn default_id() -> String {
-    ""
+    String::new()
 }
 
 /// Session todos with metadata
